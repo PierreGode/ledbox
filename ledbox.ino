@@ -5,7 +5,7 @@
 #define BUTTON_PIN6   6 
 #define BUTTON_PIN7   7
 #define PIN    10
-#define NUMPIXELS   40
+#define NUMPIXELS   40    // Change depending of number of leds
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
@@ -167,7 +167,7 @@ void start7() {
 void setred() {
   for(int i=0;i<NUMPIXELS;i++){
     // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
-    pixels.setPixelColor(i, pixels.Color(255,0,0)); // Moderately bright green color.
+    pixels.setPixelColor(i, pixels.Color(255,0,0)); // Moderately bright red color.
     pixels.show(); // This sends the updated pixel color to the hardware.
 
  }
@@ -175,7 +175,7 @@ void setred() {
 void setblue() {
   for(int i=0;i<NUMPIXELS;i++){
     // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
-    pixels.setPixelColor(i, pixels.Color(0,0,255)); // Moderately bright green color.
+    pixels.setPixelColor(i, pixels.Color(0,0,255)); // Moderately bright blue color.
     pixels.show(); // This sends the updated pixel color to the hardware.
 
  }
@@ -183,7 +183,7 @@ void setblue() {
 void setyellow() {
   for(int i=0;i<NUMPIXELS;i++){
     // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
-    pixels.setPixelColor(i, pixels.Color(250,250,210)); // Moderately bright green color.
+    pixels.setPixelColor(i, pixels.Color(250,250,210)); // Moderately bright yellow color.
     pixels.show(); // This sends the updated pixel color to the hardware.
 
  }
