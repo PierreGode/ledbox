@@ -1,4 +1,4 @@
-
+// Written by Pierre Goude
 #include <Adafruit_NeoPixel.h>
 #define BUTTON_PIN4   4    // Digital IO pin connected to the button.  This will be
 #define BUTTON_PIN5   5 
